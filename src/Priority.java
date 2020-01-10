@@ -1,3 +1,7 @@
-public class Priority {
+public interface Priority {
+
+     void setPriority(int priorityLevel);
+
+     int getPriority();
 
 }
