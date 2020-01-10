@@ -1,5 +1,11 @@
-public class NumController{
+public class Num implements Comparable{
     private int value;
+
+    @Override
+    public int compareTo(Object other) {
+        Num otherNum = (Num) other;
+        return this.getValue()-otherNum.getValue();
+    }
 
     public Num(int value) {
         this.value = value
